@@ -1,0 +1,14 @@
+<h2>Google Autocomplete App</h2>
+  <section class="col-sm-12">
+    <div class="search-results style-3">
+      <input type="text" [value]="query" placeholder="type to see jsonp results from google"
+        ngxTypeahead class="col-sm-12 form-control"
+        [taUrl]="url"
+        [taParams]="params"
+        (taSelected)="handleResultSelected($event)"
+      >
+    </div>
+  </section>
+  <custom-template-list class="container"></custom-template-list>
+
+  <static-list class="container"></static-list>
